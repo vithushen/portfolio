@@ -1,0 +1,137 @@
+/* App.css */
+.background-container {
+  background-image: url('./assets/background-blue.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent background color */
+  padding: 10px 20px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color:white;
+  font-family: 'Young Serif', serif;
+}
+
+.logo {
+  width: 100px; /* Adjust the logo size as needed */
+  height: 100px;
+  margin-right: 10px;
+}
+
+.right-side .nav-link {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 50px; /* Add a right margin for spacing */
+  color: #fff; /* Text color for links */
+  text-decoration: none;
+  font-family: 'Young Serif', serif;
+}
+
+.vithuImageF {
+  max-width: 100%; /* Set a maximum width for the image */
+  height: 750px; /* Automatically adjust the height to maintain aspect ratio */
+  margin-left: 20%; /* Adjust the margin for smaller screens */
+  margin-top: 4%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.text-content {
+  color: white; /* Set the text color */
+  margin-left: 5%;
+  margin-top: 7%;
+  font-size: 30px;
+}
+.text-content .p{
+  font-size: 20px;
+  width: 650px;
+}
+
+.buttonCss button {
+  font-size: 15px;
+  height: 50px;
+  width: 170px;
+  margin-top: 65px;
+  font-family: 'Young Serif', serif;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  margin-left: 10px;
+}
+
+.buttonCss button:hover {
+  background-color: lightblue; /* Change the background color to light blue on hover */
+}
+
+@media (max-width: 768px) {
+  .vithuImageF {
+    margin-left: 5%; /* Adjust the margin for smaller screens */
+    height: 175px; /* Allow the image to scale proportionally */
+  }
+
+  .navbar {
+    padding: 10px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .left-side {
+    font-size: 30px; /* Decrease font size for smaller screens */
+  }
+
+  .right-side .nav-link {
+    font-size: 16px; /* Decrease font size for smaller screens */
+    margin-right: 20px; /* Adjust right margin for spacing */
+  }
+
+  .text-content {
+    font-size: 24px; /* Decrease font size for smaller screens */
+    margin-left: 5%;
+    margin-top: 5%; /* Adjust top margin for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 480px (iPhone portrait) */
+@media (max-width: 480px) {
+  .vithuImageF {
+    margin-left: 2%; /* Further adjust the margin for smaller screens */
+    height: 200px;
+    margin-bottom: 35%;
+  }
+
+  .left-side {
+    font-size: 12px; /* Further decrease font size for smaller screens */
+  }
+
+  .right-side .nav-link {
+    font-size: 15px; /* Further decrease font size for smaller screens */
+    margin-right: 5px; /* Further adjust right margin for spacing */
+  }
+
+  .text-content {
+    font-size: 12px; /* Further decrease font size for smaller screens */
+    margin-left: 3%;
+    margin-top: 10%; /* Further adjust top margin for smaller screens */
+  }
+  
+  .text-content .h1{
+    font-size: 15px;
+  }
+
+  .text-content .p{
+    font-size: 10px;
+    width: 170px;
+  }
+
+}
