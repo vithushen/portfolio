@@ -4,6 +4,7 @@ import logo from './assets/logo.png'; // Replace with your logo file path
 import vithuImage from './assets/vithu.png';
 import nbaFantasy from './assets/nba-fantasy.png'
 import Modal from './Modal';
+import AboutMePopup from './AboutMePopup';
 
 // Import skill logos
 import htmlLogo from './assets/html.png';
@@ -20,6 +21,15 @@ import typescriptLogo from './assets/typescript.png';
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [isAboutMePopupOpen, setIsAboutMePopupOpen] = useState(false);
+
+  const openAboutMePopup = () => {
+    setIsAboutMePopupOpen(true);
+  };
+
+  const closeAboutMePopup = () => {
+    setIsAboutMePopupOpen(false);
+  };
 
   const projects = [
     {
@@ -51,30 +61,23 @@ function App() {
   };
 
   const skills = [
-    { name: 'HTML', logo: htmlLogo },
-    { name: 'CSS', logo: cssLogo },
-    { name: 'JavaScript', logo: javascriptLogo },
-    { name: 'Java', logo: javaLogo },
-    { name: 'Python', logo: pythonLogo },
-    { name: 'C++', logo: cppLogo },
-    { name: 'Bootstrap', logo: bootstrapLogo },
-    { name: 'React', logo: reactLogo },
-    { name: 'SQL', logo: sqlLogo },
-    { name: 'TypeScript', logo: typescriptLogo },
+    { name: 'HTML', logo: htmlLogo, link: 'https://www.w3schools.com/html/default.asp' },
+    { name: 'CSS', logo: cssLogo, link: 'https://www.w3schools.com/css/default.asp' },
+    { name: 'JavaScript', logo: javascriptLogo, link: 'https://www.w3schools.com/js/default.asp' },
+    { name: 'Java', logo: javaLogo, link: 'https://www.w3schools.com/java/default.asp' },
+    { name: 'Python', logo: pythonLogo, link: 'https://www.w3schools.com/python/default.asp' },
+    { name: 'C++', logo: cppLogo, link: 'https://www.w3schools.com/cpp/default.asp' },
+    { name: 'Bootstrap', logo: bootstrapLogo, link: 'https://www.w3schools.com/bootstrap/default.asp' },
+    { name: 'React', logo: reactLogo, link: 'https://www.w3schools.com/react/default.asp' },
+    { name: 'SQL', logo: sqlLogo, link: 'https://www.w3schools.com/sql/default.asp' },
+    { name: 'TypeScript', logo: typescriptLogo, link: 'https://www.w3schools.com/typescript/index.php' },
   ];
 
   return (
     <div className="background-container">
       <nav className="navbar">
         <div className="left-side">
-          <img src={logo} alt="Logo" className="logo" />
           <span className="website-name">Vithushen Sivasubramaniam</span>
-        </div>
-        <div className="right-side">
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">About</a>
-          <a href="#" className="nav-link">Contact</a>
-          <a href="#" className="nav-link">Portfolio</a>
         </div>
       </nav>
       <div className="flex-container">
@@ -85,12 +88,16 @@ function App() {
             <h1>I Am a Web Developer</h1>
           </div>
           <div className='p'>
-            <p>I specialize in designing and developing websites using HTML5, CSS3, React, and JavaScript. With a passion for creating visually appealing and user-friendly interfaces, I bring innovative ideas to life through my coding expertise. </p>
+            <p>I specialize in designing and developing websites using HTML5, CSS3, React and JavaScript. With a passion for creating visually appealing and user-friendly interfaces, I bring innovative ideas to life through my coding expertise. </p>
           </div>
           <div className='buttonCss'>
-            <button >HIRE ME</button>
-            <a href="#projects"><button>VIEW PROJECTS</button></a>
+            <button onClick={openAboutMePopup}>About Me</button>
+            <a href="#projects"><button>View Projects</button></a>
           </div>
+
+          {isAboutMePopupOpen && (
+            <AboutMePopup onClose={closeAboutMePopup} />
+          )}
         </div>
       </div>
       <div className='skills' id='skills'>
@@ -98,8 +105,11 @@ function App() {
         <div className='skills-container'>
           {skills.map(skill => (
             <div key={skill.name} className='skill-item'>
-              <img src={skill.logo} alt={skill.name} className='skill-logo' />
+              <a href={skill.link} target="_blank" rel="noopener noreferrer" >
+                <img src={skill.logo} alt={skill.name} className='skill-logo' />
+              </a>
               <p className='skill-name'>{skill.name}</p>
+
             </div>
           ))}
         </div>

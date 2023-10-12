@@ -32,7 +32,14 @@
   .link{
     font-size: 15px;
   }
+
+  .skill-item {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+  }
   
+  .skill-item:hover {
+    background-color: lightblue; /* Change the background color to light blue on hover */
+  }
   .close {
     color: #aaa;
     float: right;
