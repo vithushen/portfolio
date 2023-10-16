@@ -36,7 +36,7 @@ const AboutMePopup = ({ onClose }) => {
                         During my academic journey and personal projects, I have learned a lot in frontend and
                         backend development, particularly in React with proficiency in HTML, CSS, JavaScript, Java,
                         SQL and Node.js. I have a portfolio of user-friendly, responsive websites, showcasing my
-                        dedication to crafting seamless user experiences on my github. Collaborating within teams of
+                        dedication to creating user experiences on my github. Collaborating within teams of
                         various sizes, I have successfully worked on projects using Agile and Scrum methodologies,
                         demonstrating my ability to thrive in a collaborative, fast-paced environment.
                         <br></br>

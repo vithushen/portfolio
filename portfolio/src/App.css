@@ -141,6 +141,81 @@
   font-weight: bold;
 }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.image-container {
+  margin-right: 250px; /* Adjust the margin between image and text */
+}
+
+
+.project-image {
+  width: 200px; /* Set your desired width for the image */
+  height: auto; /* To maintain aspect ratio */
+}
+
+.fantasy-image {
+  width: 500px; /* Set your desired width for the image */
+  height: 300px; /* To maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.eldr-image{
+  width: 200px; /* Set your desired width for the image */
+  height: auto; /* To maintain aspect ratio */
+  margin-left: 250px; /* Adjust the margin between image and text */
+}
+
+.project-details {
+  text-align: left; /* Align text to the left within the details div */
+  width: 500px;
+}
+
+.title {
+  font-size: 36px; /* Set your desired font size for the title */
+  margin-bottom: 10px; /* Adjust the margin between title and description */
+}
+
+.description {
+  font-size: 26px; /* Set your desired font size for the description */
+}
+
+.preview {
+  width: 500px;
+  height: 35px;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+}
+
+.source {
+  width: 500px;
+  height: 35px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+}
+
+.preview:hover {
+  background-color: lightblue; /* Change the background color to light blue on hover */
+}
+
+.source:hover {
+  background-color: lightblue; /* Change the background color to light blue on hover */
+}
+
 @media (max-width: 768px) {
   .vithuImageF {
     margin-left: 5%; /* Adjust the margin for smaller screens */
