@@ -87,6 +87,11 @@
   color: white;
 } 
 
+.title-covidex{
+  font-size: 60px;
+  color: white;
+} 
+
 .project-logos{
   height:250px;
   border-radius: 50px;
@@ -184,7 +189,20 @@
   margin-top: 50px;
 }
 
+.datum-image{
+  width: 500px; /* Set your desired width for the image */
+  height: 400px; 
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
 .eldr-image{
+  width: 200px; /* Set your desired width for the image */
+  height: auto; 
+  margin-left: 450px; /* Adjust the margin between image and text */
+}
+
+.covidex-image{
   width: 200px; /* Set your desired width for the image */
   height: auto; 
   margin-left: 450px; /* Adjust the margin between image and text */
@@ -200,6 +218,20 @@
   margin-bottom: 10px; /* Adjust the margin between title and description */
 }
 
+.title-datum{
+  color: white;
+  font-size: 60px;
+}
+
+.title-fantasy{
+  color: white;
+  font-size: 50px;
+}
+
+.title-eldr{
+  color: white;
+  font-size: 50px;
+}
 .description {
   font-size: 26px; /* Set your desired font size for the description */
 }
@@ -344,7 +376,12 @@
     margin-bottom: 40px; /* Adjust spacing between projects */
 
   }
-
+  .project-details {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 350px; /* Set your desired maximum width */
+    padding: 20px;
+  }
   .title {
     font-size: 30px; /* Set your desired title font size */
     margin-bottom: 10px; /* Adjust spacing between title and image */
@@ -364,14 +401,67 @@
     margin-left: 50px;
   }
 
+
   .description {
     color: white;
-    text-align: left;
     margin-bottom: 20px; /* Adjust spacing between text and buttons */
     width: 350px;
     margin-left: 75px;
     text-align: center !important; 
     font-size: 14px !important;
+  }
+
+  .button-container{
+    padding-bottom: 550px;
+  }
+  
+  .title-datum{
+    margin-top: -375px;
+    padding-bottom: 250px;
+  }
+
+  .datum-image{
+    width: 350px;
+    height: 250px;
+    margin-top: 100px; /* Adjust spacing between image and text */
+    margin-left: 50px;
+  }
+
+  .title-covidex{
+    margin-top: -550px;
+    padding-bottom: 250px;
+  }
+
+  .covidex-image {
+    width: 150px;
+    height: 250px;
+    position: relative;
+    top: -1200px; /* Adjust this value to move the element up */
+    left: -175px; /* Adjust this value to move the element horizontally */
+  }
+
+  .title-fantasy{
+    margin-top: -1150px;
+    padding-bottom: 250px;
+  }
+
+  .fantasy-image {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    top: -700px; /* Adjust this value to move the element up */
+    left: -5px; /* Adjust this value to move the element horizontally */
+  }
+  .title-eldr{
+    margin-top: -600px;
+    padding-bottom: 250px;
+  }
+  .eldr-image {
+    width: 175px;
+    height: 250px;
+    position: relative;
+    top: -1125px; /* Adjust this value to move the element up */
+    left: 20px; /* Adjust this value to move the element horizontally */
   }
 
   .preview,
@@ -392,6 +482,10 @@
   .source:hover {
     background-color: #00138f;
     color: white;
+  }
+  
+  .image-container{
+    margin-left: 250px;
   }
 }
 
