@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMePopup.css'; // Add styles for the popup in AboutMePopup.css
-import image from './assets/vithu.png';
+import image from './assets/vithu-image2.png';
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
 
@@ -13,7 +13,7 @@ const AboutMePopup = ({ onClose }) => {
                     <div className="portfolio-circle">
                         <img src={image} alt="Portfolio" className="portfolio-image" />
                     </div>
-                    <h1 style={{ color: 'black', textAlign: 'center' }}>Vithushen Sivasubramaniam</h1>
+                    <h1 className="name" style={{ color: 'black', textAlign: 'center' }}>Vithushen Sivasubramaniam</h1>
                     <div class="container">
                         <div class="info">
                             <p style={{ fontWeight: 'bold', fontSize: '20px' }}>Expertise</p>
