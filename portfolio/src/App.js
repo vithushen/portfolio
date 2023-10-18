@@ -6,6 +6,7 @@ import eldr from './assets/eldr.png';
 import fantasy from './assets/fantasy_nba.png';
 import datum from './assets/datum_monitor.png';
 import covidex from './assets/covidex.png';
+import mave from './assets/mave.png';
 
 
 // Import skill logos
@@ -58,9 +59,9 @@ function App() {
         <img src={vithuImage} alt="vithuImage" className="vithuImageF" />
         <div className="text-content">
           <div className='h1'>
-            <h1 style={{fontFamily: 'Young Serif', letterSpacing:'5px'}}>WELCOME!</h1>
-            <h1 style={{fontFamily: 'Young Serif', letterSpacing:'2px'}}>I Am a Software Engineer</h1>
-            
+            <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '5px' }}>WELCOME!</h1>
+            <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '2px' }}>I Am a Software Engineer</h1>
+
           </div>
           <div className='p'>
             <p>I specialize in designing and developing websites using HTML5, CSS3, React and JavaScript. With a passion for creating visually appealing and user-friendly interfaces, I bring innovative ideas to life through my coding expertise. </p>
@@ -75,7 +76,7 @@ function App() {
           )}
         </div>
 
-        
+
       </div>
       <div className='skills' id='skills'>
         <h1 className='title' style={{ fontSize: '50px' }}>My Skills</h1>
@@ -105,7 +106,7 @@ function App() {
               <button className='preview' onClick={() => { window.location.href = 'https://datum-io.app/user/dashboard'; }}>
                 Preview
               </button>
-              <button className='source'>Source</button>
+              <button className='source' onClick={() => { window.location.href = 'https://github.com/vithushen'; }}>Source</button>
             </div>
           </div>
         </div>
@@ -118,7 +119,7 @@ function App() {
               <button className='preview' onClick={() => { window.location.href = 'https://covidex.live/'; }}>
                 Preview
               </button>
-              <button className='source'>Source</button>
+              <button className='source' onClick={() => { window.location.href = 'https://github.com/vithushen'; }}>Source</button>
             </div>
           </div>
           <div className='second-container'>
@@ -137,7 +138,7 @@ function App() {
               <button className='preview' onClick={() => { window.location.href = 'https://vithushen.github.io/NBA-Fantasy-Helper/'; }}>
                 Preview
               </button>
-              <button className='source'>Source</button>
+              <button className='source' onClick={() => { window.location.href = 'https://github.com/vithushen/NBA-Fantasy-Helper'; }} >Source</button>
             </div>
           </div>
         </div>
@@ -150,11 +151,28 @@ function App() {
               <button className='preview' onClick={() => { window.location.href = 'https://www.figma.com/proto/AeMKmKMeebpAjkK44w4yGK/Soen-357-Mini-Project?node-id=39-689&starting-point-node-id=39%3A590'; }}>
                 Preview
               </button>
-              <button className='source'>Source</button>
             </div>
           </div>
           <div className='second-container'>
             <img src={eldr} alt='Project' className='eldr-image' />
+          </div>
+        </div>
+        <div className='background-bottom'>
+          <div className='project-container'>
+            <div className='image-container'>
+              <img src={mave} alt='Project' className='fantasy-image' />
+            </div>
+            <div className='project-details'>
+              <h1 className='title-fantasy' style={{ textAlign: "center" }}>Mave Grocery Store</h1>
+              <p className='description' style={{ color: "white", textAlign: 'left' }}>Mave Grocery Store project is a  web application where customers can experience the convenience of grocery shopping from the comfort of their homes. By creating a personalized account, users gain access to a vast array of products from fresh produce to cleaning supplies. </p>
+              <p className='description' style={{ color: "white", textAlign: 'left' }}>Our user-friendly interface allows customers to browse through a catalog, add items to their cart and securely complete their purchases online. With simple navigation, secure payment options and timely delivery services, our web application redefines the way people shop for groceries, making it effortless, efficient, and enjoyable.</p>
+              <div className='button-container'>
+                <button className='preview' onClick={() => { window.location.href = 'https://mave-grocery.web.app/index.html'; }}>
+                  Preview
+                </button>
+                <button className='source' onClick={() => { window.location.href = 'https://github.com/Ellendra-JH/mave'; }} >Source</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
