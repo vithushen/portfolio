@@ -1,4 +1,4 @@
-/* App.css */
+/* Landing Page CSS */
 .background-container {
   background-image: url('./assets/bg-neon.png');
   background-size: 250%;
@@ -111,6 +111,7 @@
   margin-bottom: 20px;
 }
 
+/* CSS for My Skills */
 .skills{
   margin-top: 450px;
 }
@@ -153,6 +154,7 @@
   font-weight: bold;
 }
 
+/* CSS for my projects */
 .projects {
   padding-top: 100px;
   text-align: center;
@@ -233,7 +235,7 @@
   font-size: 50px;
 }
 .description {
-  font-size: 26px; 
+  font-size: 18px !important; 
 }
 
 .preview {
@@ -273,7 +275,58 @@
   color: white;
 }
 
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
 
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icon-link{
+  width: 45px; 
+  height: 45px;
+  margin: -15px 5px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  margin: -15px 5px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icon-link:hover {
+  transform: scale(1.2);
+}
+
+.email {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.email:hover {
+  color: #42a5f5;
+}
+
+.copyright {
+  font-size: 14px;
+}
 
 @media (max-width: 1024px) {
   .navbar {
@@ -300,6 +353,7 @@
   }
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
   .background-container {
     background-image: url('./assets/bg-neon.png');

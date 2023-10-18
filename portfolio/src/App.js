@@ -7,7 +7,8 @@ import fantasy from './assets/fantasy_nba.png';
 import datum from './assets/datum_monitor.png';
 import covidex from './assets/covidex.png';
 import mave from './assets/mave.png';
-
+import github from './assets/github.png';
+import linkedin from './assets/linkedin.png';
 
 // Import skill logos
 import htmlLogo from './assets/html.png';
@@ -174,6 +175,22 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/vithushen-sivasubramaniam-8b35a4236/" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="LinkedIn" className="social-icon-link" />
+          </a>
+          <a href="https://github.com/vithushen" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="GitHub" className="social-icon" />
+          </a>
+          <a href="mailto:vithu.99@hotmail.com">
+            <span className="email">vithu.99@hotmail.com</span>
+          </a>
+        </div>
+        <div className="copyright">
+          <p>&copy; 2023 Vithushen Sivasubramaniam. All rights reserved.</p>
         </div>
       </div>
     </div>
