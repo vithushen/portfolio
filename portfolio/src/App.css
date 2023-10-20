@@ -312,7 +312,7 @@
 }
 
 .email {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
@@ -488,20 +488,20 @@
 
   .title-covidex{
     margin-top: -550px;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
   }
 
   .covidex-image {
     width: 150px;
     height: 250px;
     position: relative;
-    top: -1200px; /* Adjust this value to move the element up */
+    top: -1250px; /* Adjust this value to move the element up */
     left: -175px; /* Adjust this value to move the element horizontally */
   }
 
   .title-fantasy{
     margin-top: -1150px;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
   }
 
   .fantasy-image {
@@ -513,13 +513,13 @@
   }
   .title-eldr{
     margin-top: -600px;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
   }
   .eldr-image {
     width: 175px;
     height: 250px;
     position: relative;
-    top: -1125px; /* Adjust this value to move the element up */
+    top: -1150px; /* Adjust this value to move the element up */
     left: 20px; /* Adjust this value to move the element horizontally */
   }
 
@@ -528,7 +528,7 @@
     font-size: 15px;
     height: 50px;
     width: 170px;
-    margin-top: 10px; /* Adjust top margin for buttons */
+    margin-top: 25px; /* Adjust top margin for buttons */
     margin-bottom: 10px; /* Adjust bottom margin for buttons */
     font-family: 'Young Serif', serif;
     border-radius: 10px;
@@ -545,6 +545,13 @@
   
   .image-container{
     margin-left: 250px;
+  }
+
+  .social-icon-link{
+    padding-bottom: 20px !important;
+  }
+  .social-icon{
+    padding-bottom: 20px !important;
   }
 }
 
