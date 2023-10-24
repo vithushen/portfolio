@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import vithuImage from './assets/vithu.png';
 import AboutMePopup from './AboutMePopup';
@@ -49,6 +49,61 @@ function App() {
     { name: 'TypeScript', logo: typescriptLogo, link: 'https://www.w3schools.com/typescript/index.php' },
   ];
 
+  //Text Effect for "I Am ..."
+  const [text, setText] = useState('I Am Software Engineer!');
+  const [showBackslash, setShowBackslash] = useState(true);
+
+  useEffect(() => {
+    const eraseAndType = async (textToErase, newText1, newText2, newText3) => {
+      const eraseText = async (textToErase) => {
+        setShowBackslash(true);
+        for (let i = textToErase.length; i >= 0; i--) {
+          setText(`I Am ${textToErase.substring(0, i)}`);
+          await sleep(200); // Erasing speed: 200 milliseconds per character
+        }
+        setShowBackslash(false);
+      };
+  
+      const typeText = async (newText) => {
+        setShowBackslash(true);
+        for (let i = 0; i <= newText.length; i++) {
+          setText(`I Am ${newText.substring(0, i)}`);
+          await sleep(200); // Typing speed: 200 milliseconds per character
+        }
+        setShowBackslash(false);
+      };
+  
+      while(true){
+      await sleep(2000); // Delay before erasing: 1000 milliseconds
+      await eraseText(textToErase);
+      await typeText(newText1);
+      await sleep(2000); // Delay before erasing: 1000 milliseconds
+      await eraseText(newText1);
+      await typeText(newText2);
+      await sleep(2000); // Delay before erasing: 1000 milliseconds
+      await eraseText(newText2);
+      await typeText(newText3);
+      await sleep(2000); // Delay before erasing: 1000 milliseconds
+      await eraseText(newText3);
+      await typeText(textToErase);
+      await sleep(2000); // Delay before erasing: 1000 milliseconds
+    }
+    };
+   
+    const textToErase = "Software Engineer!";
+    const newText1 = "New Graduate!";
+    const newText2 = "Hard Worker!";
+    const newText3 = "Creative!";
+  
+    eraseAndType(textToErase, newText1, newText2, newText3);
+  
+    return () => {
+      // Cleanup logic if needed
+    };
+  }, []);
+  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+
   return (
     <div className="background-container">
       <nav className="navbar">
@@ -61,7 +116,11 @@ function App() {
         <div className="text-content">
           <div className='h1'>
             <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '5px' }}>WELCOME!</h1>
-            <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '2px' }}>I Am a Software Engineer</h1>
+            
+            <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '2px' }}>
+              {text}
+              {showBackslash && '|'}
+            </h1>
 
           </div>
           <div className='p'>
@@ -76,8 +135,6 @@ function App() {
             <AboutMePopup onClose={closeAboutMePopup} />
           )}
         </div>
-
-
       </div>
       <div className='skills' id='skills'>
         <h1 className='title' style={{ fontSize: '50px' }}>My Skills</h1>

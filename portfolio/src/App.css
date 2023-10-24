@@ -76,7 +76,7 @@
 }
 
 .buttonCss button:hover {
-  background-color: #00138f; /* Change the background color on hover */
+  background: linear-gradient(to bottom, #00138f, #0056b3); 
   color: white;
   border: none;
 }
@@ -109,6 +109,7 @@
 .title {
   font-size: 36px;
   margin-bottom: 20px;
+  color:white;
 }
 
 /* CSS for My Skills */
@@ -138,7 +139,7 @@
 
 .skill-item:hover {
   transform: translateY(-5px);
-  background-color: #00138f; 
+  background: linear-gradient(to bottom, #00138f, #0056b3); 
   color: white;
 }
 
@@ -264,13 +265,13 @@
 }
 
 .preview:hover {
-  background-color: #00138f; /* Change the background color on hover */
+  background: linear-gradient(to bottom, #00138f, #0056b3); 
   border: none;
   color: white;
 }
 
 .source:hover {
-  background-color: #00138f; /* Change the background on hover */
+  background: linear-gradient(to bottom, #00138f, #0056b3); 
   border: none;
   color: white;
 }
@@ -539,7 +540,7 @@
 
   .preview:hover,
   .source:hover {
-    background-color: #00138f;
+    background: linear-gradient(to bottom, #00138f, #0056b3); 
     color: white;
   }
   
