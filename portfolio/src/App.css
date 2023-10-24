@@ -37,13 +37,18 @@
 }
 
 .vithuImageF {
-  max-width: 100%; 
-  width: 750px; 
-  height: 750px; 
-  margin-left: 20%; /* Adjust the margin for smaller screens */
+  max-width: 100%;
+  width: 750px;
+  height: 750px;
+  margin-left: 20%;
   margin-top: 6%;
-  box-shadow: 0 4px 20px #1932d4;
-  border-radius: 50%; 
+  border-radius: 50%;
+  transition: box-shadow 1s ease-in-out; /* Transition the box-shadow property over 1 second */
+  box-shadow: 0 4px 20px #1932d4; /* Updated box shadow with 20px blur */
+}
+
+.vithuImageF.withBoxShadow {
+  box-shadow: 0 4px 50px #1932d4; /* Updated box shadow with 20px blur */
 }
 
 .flex-container {
@@ -107,9 +112,10 @@
 }
 
 .title {
+  padding-top: 50px;
   font-size: 36px;
   margin-bottom: 20px;
-  color:white;
+  color: white;
 }
 
 /* CSS for My Skills */
@@ -124,6 +130,7 @@
   justify-content: center;
   max-width: 1300px;
   margin: 0 auto;
+  padding-bottom: 75px;
 }
 
 .skill-item {
@@ -156,6 +163,13 @@
 }
 
 /* CSS for my projects */
+
+.title-project{
+  
+  font-size: 36px;
+  color:white;
+}
+
 .projects {
   padding-top: 100px;
   text-align: center;

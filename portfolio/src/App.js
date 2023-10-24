@@ -49,7 +49,7 @@ function App() {
     { name: 'TypeScript', logo: typescriptLogo, link: 'https://www.w3schools.com/typescript/index.php' },
   ];
 
-  //Text Effect for "I Am ..."
+  // Text Effect for "I Am ..."
   const [text, setText] = useState('I Am Software Engineer!');
   const [showBackslash, setShowBackslash] = useState(true);
 
@@ -63,7 +63,7 @@ function App() {
         }
         setShowBackslash(false);
       };
-  
+
       const typeText = async (newText) => {
         setShowBackslash(true);
         for (let i = 0; i <= newText.length; i++) {
@@ -72,38 +72,53 @@ function App() {
         }
         setShowBackslash(false);
       };
-  
-      while(true){
-      await sleep(2000); // Delay before erasing: 1000 milliseconds
-      await eraseText(textToErase);
-      await typeText(newText1);
-      await sleep(2000); // Delay before erasing: 1000 milliseconds
-      await eraseText(newText1);
-      await typeText(newText2);
-      await sleep(2000); // Delay before erasing: 1000 milliseconds
-      await eraseText(newText2);
-      await typeText(newText3);
-      await sleep(2000); // Delay before erasing: 1000 milliseconds
-      await eraseText(newText3);
-      await typeText(textToErase);
-      await sleep(2000); // Delay before erasing: 1000 milliseconds
-    }
+
+      while (true) {
+        await sleep(2000); 
+        await eraseText(textToErase);
+        await typeText(newText1);
+        await sleep(2000); 
+        await eraseText(newText1);
+        await typeText(newText2);
+        await sleep(2000); 
+        await eraseText(newText2);
+        await typeText(newText3);
+        await sleep(2000); 
+        await eraseText(newText3);
+        await typeText(textToErase);
+        await sleep(2000); 
+      }
     };
-   
+
     const textToErase = "Software Engineer!";
     const newText1 = "New Graduate!";
     const newText2 = "Hard Worker!";
     const newText3 = "Creative!";
-  
+
     eraseAndType(textToErase, newText1, newText2, newText3);
-  
+
     return () => {
-      // Cleanup logic if needed
+      
     };
   }, []);
+
   const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+  // Image Shadow
+  const [hasBoxShadow, setHasBoxShadow] = useState(false);
 
+  useEffect(() => {
+    // Toggle the class every second
+    const intervalId = setInterval(() => {
+      setHasBoxShadow(prevState => !prevState);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []); 
+
+  
   return (
     <div className="background-container">
       <nav className="navbar">
@@ -112,7 +127,7 @@ function App() {
         </div>
       </nav>
       <div className="flex-container">
-        <img src={vithuImage} alt="vithuImage" className="vithuImageF" />
+        <img src={vithuImage} alt="vithuImage" className={`vithuImageF ${hasBoxShadow ? 'withBoxShadow' : ''}`} />
         <div className="text-content">
           <div className='h1'>
             <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '5px' }}>WELCOME!</h1>
@@ -151,7 +166,7 @@ function App() {
         </div>
       </div>
       <div className='projects' id='projects'>
-        <h1 className='title' style={{ fontSize: '50px' }}>My Project</h1>
+        <h1 className='title-project' style={{ fontSize: '50px'}}>My Project</h1>
         <div className='project-container'>
           <div className='image-container'>
             <img src={datum} alt='Project' className='datum-image' />
