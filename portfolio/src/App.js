@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Typewriter from 'typewriter-effect'
 import './App.css';
 import vithuImage from './assets/vithu.png';
 import AboutMePopup from './AboutMePopup';
@@ -49,61 +50,6 @@ function App() {
     { name: 'TypeScript', logo: typescriptLogo, link: 'https://www.w3schools.com/typescript/index.php' },
   ];
 
-  // Text Effect for "I Am ..."
-  const [text, setText] = useState('I Am Software Engineer!');
-  const [showBackslash, setShowBackslash] = useState(true);
-
-  useEffect(() => {
-    const eraseAndType = async (textToErase, newText1, newText2, newText3) => {
-      const eraseText = async (textToErase) => {
-        setShowBackslash(true);
-        for (let i = textToErase.length; i >= 0; i--) {
-          setText(`I Am ${textToErase.substring(0, i)}`);
-          await sleep(200); // Erasing speed: 200 milliseconds per character
-        }
-        setShowBackslash(false);
-      };
-
-      const typeText = async (newText) => {
-        setShowBackslash(true);
-        for (let i = 0; i <= newText.length; i++) {
-          setText(`I Am ${newText.substring(0, i)}`);
-          await sleep(200); // Typing speed: 200 milliseconds per character
-        }
-        setShowBackslash(false);
-      };
-
-      while (true) {
-        await sleep(2000); 
-        await eraseText(textToErase);
-        await typeText(newText1);
-        await sleep(2000); 
-        await eraseText(newText1);
-        await typeText(newText2);
-        await sleep(2000); 
-        await eraseText(newText2);
-        await typeText(newText3);
-        await sleep(2000); 
-        await eraseText(newText3);
-        await typeText(textToErase);
-        await sleep(2000); 
-      }
-    };
-
-    const textToErase = "Software Engineer!";
-    const newText1 = "New Graduate!";
-    const newText2 = "Hard Worker!";
-    const newText3 = "Creative!";
-
-    eraseAndType(textToErase, newText1, newText2, newText3);
-
-    return () => {
-      
-    };
-  }, []);
-
-  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
   // Image Shadow
   const [hasBoxShadow, setHasBoxShadow] = useState(false);
 
@@ -116,9 +62,9 @@ function App() {
     return () => {
       clearInterval(intervalId);
     };
-  }, []); 
+  }, []);
 
-  
+
   return (
     <div className="background-container">
       <nav className="navbar">
@@ -131,11 +77,19 @@ function App() {
         <div className="text-content">
           <div className='h1'>
             <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '5px' }}>WELCOME!</h1>
-            
-            <h1 style={{ fontFamily: 'Young Serif', letterSpacing: '2px' }}>
-              {text}
-              {showBackslash && '|'}
-            </h1>
+
+
+            <div className="typewriter-text">
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  deleteSpeed: 100,
+                  strings: ["I am a Software Engineer!", "I am a Web Developer!", "I am a New Graduate!"]
+                }}
+              />
+            </div>
 
           </div>
           <div className='p'>
@@ -166,7 +120,7 @@ function App() {
         </div>
       </div>
       <div className='projects' id='projects'>
-        <h1 className='title-project' style={{ fontSize: '50px'}}>My Project</h1>
+        <h1 className='title-project' style={{ fontSize: '50px' }}>My Project</h1>
         <div className='project-container'>
           <div className='image-container'>
             <img src={datum} alt='Project' className='datum-image' />
@@ -257,10 +211,10 @@ function App() {
           <a href="https://github.com/vithushen" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="GitHub" className="social-icon" />
           </a>
-          <a href="mailto:vithu.99@hotmail.com">
+        </div>
+        <a href="mailto:vithu.99@hotmail.com">
             <span className="email">vithu.99@hotmail.com</span>
           </a>
-        </div>
         <div className="copyright">
           <p>&copy; 2023 Vithushen Sivasubramaniam. All rights reserved.</p>
         </div>
