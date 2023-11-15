@@ -93,7 +93,8 @@ function App() {
 
           </div>
           <div className='p'>
-            <p>I specialize in designing and developing websites using HTML5, CSS3, React and JavaScript. With a passion for creating visually appealing and user-friendly interfaces, I bring innovative ideas to life through my coding expertise. </p>
+            <p>My name is Vithushen Sivasubramaniam and I am a new graduate from Concordia University as a Software Engineer and have a passion for programming. Having recently completed my studies and acquired a solid foundation in programming languages especially in the frontend field, I am ready to contribute my skills in a professinal atmosphere.  
+ </p>
           </div>
           <div className='buttonCss'>
             <button onClick={openAboutMePopup}>About Me</button>
