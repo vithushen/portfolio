@@ -33,27 +33,11 @@ const AboutMePopup = ({ onClose }) => {
                         </div>
                     </div>
                     <p className="description">
-                        During my academic journey and personal projects, I have learned a lot in frontend and
-                        backend development, particularly in React with proficiency in HTML, CSS, JavaScript, Java,
-                        SQL and Node.js. I have a portfolio of user-friendly, responsive websites, showcasing my
-                        dedication to creating user experiences. Collaborating within teams of
-                        various sizes, I have successfully worked on projects using Agile and Scrum methodologies,
-                        demonstrating my ability to work in a collaborative and fast-paced environment.
+                        After 5 years of programming, I have learned a lot in frontend and backend development, particularly in React with proficiency in HTML, CSS, JavaScript, Java, Python and SQL. I have a portfolio of user-friendly, responsive websites, showcasing my dedication to creating user experiences. Collaborating within teams of various sizes, I have successfully worked on projects using Agile and Scrum methodologies, demonstrating my ability to work in a collaborative and fast-paced environment using Github and Jira.
                         <br></br>
                         <br></br>
-                        What sets me apart is my commitment to continuous improvement. After completing my
-                        projects, I actively seek feedback from peers and friends to enhance my work further. This
-                        iterative process has not only refined my technical skills but also helped my growth and
-                        adaptability.
-                    </p>
-                    <div className='logos'>
-                        <a href="https://github.com/vithushen">
-                            <img src={github} alt="github" className='github-logo' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vithushen-sivasubramaniam-8b35a4236/">
-                            <img src={linkedin} alt="linkedin" className='linkedin-logo' />
-                        </a>
-                    </div>
+                        I have also received a certification in the Foundation of SRE from Wiley Edge Academy. This certification has equipped me with advanced skills in executing Production Support and Site Reliability Engineering responsibilities. Utilizing tools such as Kubernetes, Grafana, and Prometheus, I've gained experience in monitoring website performance to ensure optimal operation and reliability. Moreover, I've implemented automation strategies to reduce manual tasks and toil, thereby enhancing efficiency and reliability in website operations. Furthermore, I've developed robust testing procedures using Jenkins, automating testing processes to maintain code quality and reliability throughout the development lifecycle.                    </p>
+                        <a href='https://www.credly.com/badges/5ebb5577-9f4b-41aa-b15d-284c36c9111c/public_url' target="_blank" rel="noopener noreferrer" style={{fontSize:"20px"}}>Wiley Edge Certificate</a>
                 </div>
                 <button className="close-button" onClick={onClose}>Close</button>
             </div>

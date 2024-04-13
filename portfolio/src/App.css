@@ -1,7 +1,7 @@
 /* Landing Page CSS */
 .background-container {
-  background-image: url('./assets/bg-neon.png');
-  background-size: 6500px;
+  background-image: url('./assets/bg.jpg');
+  background-size: 3000px;
   height: auto;
 }
 
@@ -9,8 +9,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(15, 15, 15); 
-  padding: 10px 20px;
+  padding: 20px;
+}
+
+.navbar .website-name {
+  font-size: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
 }
 
 .left-side {
@@ -146,11 +155,13 @@
   margin: 10px;
   padding: 50px;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 75px;
+  height: 130px;
 }
 
 .skill-item:hover {
@@ -448,7 +459,7 @@
 
   .skill-item {
     width: 75px; /* Set the width of each skill item to fit two columns */
-    height: 100px;
+    height: 125px;
     margin: 10px; /* Add some margin between skill items */
   }
 
@@ -588,4 +599,21 @@
 .h1 h1 {
   display: block;
   animation: slideAndColorChange 1s forwards;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+  }
+
+  .navbar .website-name {
+    margin-bottom: 10px;
+  }
+
+  .right-side {
+    display: none; /* Hide the right-side links */
+  }
 }

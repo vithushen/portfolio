@@ -22,6 +22,22 @@ import bootstrapLogo from './assets/bootstrap.png';
 import reactLogo from './assets/react.png';
 import sqlLogo from './assets/sql.png';
 import typescriptLogo from './assets/typescript.png';
+import GitLogo from './assets/git.png';
+import JiraLogo from './assets/jira.png';
+import GrafanaLogo from './assets/grafana.png';
+import LinuxLogo from './assets/linux.png';
+import FigmaLogo from './assets/figma.png';
+import JenkinsLogo from './assets/jenkins.png';
+import PrometheusLogo from './assets/prometheus.png';
+import KubernetsLogo from './assets/kubernets.png';
+import AmazonLogo from './assets/amazon.png';
+import VisualStudioLogo from './assets/visual-studio-code.png';
+import DockerLogo from './assets/docker.png';
+
+import vithuCV from './assets/vithuCV.pdf';
+
+
+
 
 function App() {
   const [isAboutMePopupOpen, setIsAboutMePopupOpen] = useState(false);
@@ -37,18 +53,38 @@ function App() {
 
 
 
-  const skills = [
-    { name: 'HTML', logo: htmlLogo, link: 'https://www.w3schools.com/html/default.asp' },
-    { name: 'CSS', logo: cssLogo, link: 'https://www.w3schools.com/css/default.asp' },
-    { name: 'JavaScript', logo: javascriptLogo, link: 'https://www.w3schools.com/js/default.asp' },
-    { name: 'Java', logo: javaLogo, link: 'https://www.w3schools.com/java/default.asp' },
-    { name: 'Python', logo: pythonLogo, link: 'https://www.w3schools.com/python/default.asp' },
-    { name: 'C++', logo: cppLogo, link: 'https://www.w3schools.com/cpp/default.asp' },
-    { name: 'Bootstrap', logo: bootstrapLogo, link: 'https://www.w3schools.com/bootstrap/default.asp' },
-    { name: 'React', logo: reactLogo, link: 'https://www.w3schools.com/react/default.asp' },
-    { name: 'SQL', logo: sqlLogo, link: 'https://www.w3schools.com/sql/default.asp' },
-    { name: 'TypeScript', logo: typescriptLogo, link: 'https://www.w3schools.com/typescript/index.php' },
+  // Programming languages
+  const programmingLanguages = [
+    { name: 'HTML', logo: htmlLogo},
+    { name: 'CSS', logo: cssLogo},
+    { name: 'JavaScript', logo: javascriptLogo},
+    { name: 'Java', logo: javaLogo},
+    { name: 'Python', logo: pythonLogo},
+    { name: 'C++', logo: cppLogo},
+    { name: 'SQL', logo: sqlLogo},
+    { name: 'React', logo: reactLogo},
+    { name: 'TypeScript', logo: typescriptLogo},
   ];
+
+  // Tools & Technologies
+  const toolsAndTechnologies = [
+    { name: 'GitHub', logo: github},
+    { name: 'Git', logo: GitLogo},
+    { name: 'Visual Studio', logo: VisualStudioLogo},
+    { name: 'Jira', logo: JiraLogo},
+    { name: 'Linux/UNIX', logo: LinuxLogo},
+    { name: 'Grafana', logo: GrafanaLogo},
+    { name: 'AWS EC2', logo: AmazonLogo},
+    { name: 'Prometheus', logo: PrometheusLogo},
+    { name: 'Jenkins', logo: JenkinsLogo},
+    { name: 'Kubernetes', logo: KubernetsLogo},
+    { name: 'Docker', logo: DockerLogo},
+    { name: 'Figma', logo: FigmaLogo},
+    { name: 'Bootstrap', logo: bootstrapLogo},
+  ];
+
+
+
 
   // Image Shadow
   const [hasBoxShadow, setHasBoxShadow] = useState(false);
@@ -71,6 +107,12 @@ function App() {
         <div className="left-side">
           <span className="website-name">Vithushen Sivasubramaniam</span>
         </div>
+        <div className="right-side">
+          <a href="#skills" className="nav-link">My Skills</a>
+          <a href="#projects" className="nav-link">My Projects</a>
+          <a href="https://www.linkedin.com/in/vithushen-sivasubramaniam/" target="_blank" rel="noopener noreferrer" className="nav-link">My LinkedIn</a>
+          <a href="https://github.com/vithushen" target="_blank" rel="noopener noreferrer" className="nav-link">My GitHub</a>
+        </div>
       </nav>
       <div className="flex-container">
         <img src={vithuImage} alt="vithuImage" className={`vithuImageF ${hasBoxShadow ? 'withBoxShadow' : ''}`} />
@@ -86,42 +128,60 @@ function App() {
                   loop: true,
                   delay: 100,
                   deleteSpeed: 100,
-                  strings: ["I am a Software Engineer!", "I am a Web Developer!", "I am a New Graduate!"]
+                  strings: ["I am a Software Engineer!", "Looking for a Job Opportunity!", "Always Learning New Tech!"]
                 }}
               />
             </div>
 
           </div>
           <div className='p'>
-            <p>My name is Vithushen Sivasubramaniam and I am a new graduate from Concordia University as a Software Engineer and have a passion for programming. Having recently completed my studies and acquired a solid foundation in programming languages especially in the frontend field, I am ready to contribute my skills in a professinal atmosphere.  
- </p>
+            <p>My name is Vithushen Sivasubramaniam and I am a graduate from Concordia University as a Software Engineer and have a passion for programming. Having recently completed my studies and acquired a solid foundation in programming languages. I have strong knowledge in Frontend, Backend, Databases, SRE, Testing and many other skills that I would love to discuss in a interview!
+            </p>
+            <p>Feel free to contact me at vithu.99@hotmail.com!</p>
           </div>
           <div className='buttonCss'>
             <button onClick={openAboutMePopup}>About Me</button>
-            <a href="#projects"><button>View Projects</button></a>
+            <button className='preview' onClick={() => { window.open(vithuCV, '_blank'); }}>
+              Hire Me
+            </button>
           </div>
-
           {isAboutMePopupOpen && (
             <AboutMePopup onClose={closeAboutMePopup} />
           )}
         </div>
       </div>
+
       <div className='skills' id='skills'>
-        <h1 className='title' style={{ fontSize: '50px' }}>My Skills</h1>
+        <h1 className='title' style={{ fontSize: '60px' }}>My Skills</h1>
+        <h1 className='title' style={{ fontSize: '50px' }}>Programming Languages</h1>
         <div className='skills-container'>
-          {skills.map(skill => (
+          {programmingLanguages.map(skill => (
             <div key={skill.name} className='skill-item'>
               <a href={skill.link} target="_blank" rel="noopener noreferrer" >
                 <img src={skill.logo} alt={skill.name} className='skill-logo' />
               </a>
               <p className='skill-name'>{skill.name}</p>
+            </div>
+          ))}
+        </div>
 
+        <h1 className='title' style={{ fontSize: '50px' }}>Tools & Technologies</h1>
+        <div className='skills-container'>
+          {toolsAndTechnologies.map(tool => (
+            <div key={tool.name} className='skill-item'>
+              <a href={tool.link} target="_blank" rel="noopener noreferrer" >
+                <img src={tool.logo} alt={tool.name} className='skill-logo' />
+              </a>
+              <p className='skill-name'>{tool.name}</p>
             </div>
           ))}
         </div>
       </div>
+
+
+
       <div className='projects' id='projects'>
-        <h1 className='title-project' style={{ fontSize: '50px' }}>My Project</h1>
+        <h1 className='title-project' style={{ fontSize: '50px' }}>My Projects</h1>
         <div className='project-container'>
           <div className='image-container'>
             <img src={datum} alt='Project' className='datum-image' />
@@ -138,6 +198,9 @@ function App() {
             </div>
           </div>
         </div>
+
+
+
         <div className='project-container'>
           <div className='project-details'>
             <h1 className='title-covidex' style={{ textAlign: "center" }}>Covidex</h1>
@@ -154,6 +217,7 @@ function App() {
             <img src={covidex} alt='Project' className='covidex-image' />
           </div>
         </div>
+
         <div className='project-container'>
           <div className='image-container'>
             <img src={fantasy} alt='Project' className='fantasy-image' />
@@ -205,17 +269,9 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <div className="social-icons">
-          <a href="https://www.linkedin.com/in/vithushen-sivasubramaniam-8b35a4236/" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="LinkedIn" className="social-icon-link" />
-          </a>
-          <a href="https://github.com/vithushen" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="GitHub" className="social-icon" />
-          </a>
-        </div>
         <a href="mailto:vithu.99@hotmail.com">
-            <span className="email">vithu.99@hotmail.com</span>
-          </a>
+          <span className="email">vithu.99@hotmail.com</span>
+        </a>
         <div className="copyright">
           <p>&copy; 2023 Vithushen Sivasubramaniam. All rights reserved.</p>
         </div>
