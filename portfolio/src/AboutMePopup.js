@@ -36,7 +36,7 @@ const AboutMePopup = ({ onClose }) => {
                         <br></br>
                         <br></br>
                         I have also received a certification in the Foundation of SRE from Wiley Edge Academy. This certification has equipped me with advanced skills in executing Production Support and Site Reliability Engineering responsibilities. Utilizing tools such as Kubernetes, Grafana, and Prometheus, I've gained experience in monitoring website performance to ensure optimal operation and reliability. Moreover, I've implemented automation strategies to reduce manual tasks and toil, thereby enhancing efficiency and reliability in website operations. Furthermore, I've developed robust testing procedures using Jenkins, automating testing processes to maintain code quality and reliability throughout the development lifecycle.                    </p>
-                    <a href='https://www.credly.com/badges/5ebb5577-9f4b-41aa-b15d-284c36c9111c/public_url' target="_blank" rel="noopener noreferrer" style={{ fontSize: "20px" }}>Wiley Edge Certificate</a>
+                    <a href='https://www.credly.com/badges/5ebb5577-9f4b-41aa-b15d-284c36c9111c/public_url' target="_blank" rel="noopener noreferrer" style={{ fontSize: "20px", color:"white" }}>Wiley Edge Certificate</a>
                 </div>
                 <button className="close-button" onClick={onClose}>Close</button>
             </div>

@@ -26,6 +26,13 @@ import covidex1 from './assets/covidex-1.png';
 import covidex2 from './assets/covidex-2.png';
 import covidex3 from './assets/covidex-3.png';
 
+import nba1 from './assets/nba-1.png';
+import nba2 from './assets/nba-2.jpeg'; 
+
+import eldr1 from './assets/elder-1.png';
+import eldr2 from './assets/elder-2.png';
+import eldr3 from './assets/elder-3.png';
+
 // Import skill logos
 import htmlLogo from './assets/html.png';
 import cssLogo from './assets/css.png';
@@ -129,13 +136,13 @@ function App() {
   const project2Images = [covidex2, covidex1, covidex3];
 
    // Define images for Project 2
-   const project3Images = [datum, covidex];
+   const project3Images = [nba1, nba2];
 
     // Define images for Project 2
     const project4Images = [mave1, mave2, mave3, mave4];
 
    // Define images for Project 2
-   const project5Images = [datum, covidex];
+   const project5Images = [eldr1, eldr3 ,eldr2];
 
 
    const handleNextImage = (project) => {
@@ -251,8 +258,56 @@ function App() {
 
       <div className="projects" id="projects">
         <h1 className="title-project" style={{ fontSize: "50px" }}>
-          My Projects
+          My Projects/Experiences
         </h1>
+
+           {/* Project 1 */}
+           <div className="project-container">
+          <div className="project-details">
+            <h2>Blip Barber</h2>
+            <p className="description">
+              The purpose of this project is to design a mobile application to allow researchers to collect data for a specific study that encourages repeated engagement through gamification.
+              <br></br>
+              <br></br>
+              A user-centered approach will be applied to encourage usability and engagement. The application would be usable for a variety of different research studies (e.g. mental health studies, product engagement studies, etc.). Hence, it could be used in a wide array of fields.
+            </p>
+            <div>
+              <button className="button-preview-source" onClick={() => window.open('https://datum-io.app/user/dashboard', '_blank')}>Demo</button>
+              <button className="button-preview-source" onClick={() => window.open('https://github.com/vithushen/blip', '_blank')}>Source</button>
+            </div>
+          </div>
+          <div className="project-image">
+            <img className='image' src={project1Images[currentProjectImageIndexes.project1]} alt="Project 1" />
+            <div>
+              <button className='button-prev-next' onClick={() => handlePrevImage("project1")}>Previous</button>
+              <button className='button-prev-next' onClick={() => handleNextImage("project1")}>Next</button>
+            </div>
+          </div>
+        </div>
+
+           {/* Project 1 */}
+           <div className="project-container">
+          <div className="project-details">
+            <h2>RYU Inventory</h2>
+            <p className="description">
+              The purpose of this project is to design a mobile application to allow researchers to collect data for a specific study that encourages repeated engagement through gamification.
+              <br></br>
+              <br></br>
+              A user-centered approach will be applied to encourage usability and engagement. The application would be usable for a variety of different research studies (e.g. mental health studies, product engagement studies, etc.). Hence, it could be used in a wide array of fields.
+            </p>
+            <div>
+              <button className="button-preview-source" onClick={() => window.open('', '_blank')}>Demo</button>
+              <button className="button-preview-source" onClick={() => window.open('https://github.com/vithushen/ryu-lavia', '_blank')}>Source</button>
+            </div>
+          </div>
+          <div className="project-image">
+            <img className='image' src={project1Images[currentProjectImageIndexes.project1]} alt="Project 1" />
+            <div>
+              <button className='button-prev-next' onClick={() => handlePrevImage("project1")}>Previous</button>
+              <button className='button-prev-next' onClick={() => handleNextImage("project1")}>Next</button>
+            </div>
+          </div>
+        </div>
 
         {/* Project 1 */}
         <div className="project-container">
@@ -265,8 +320,9 @@ function App() {
               A user-centered approach will be applied to encourage usability and engagement. The application would be usable for a variety of different research studies (e.g. mental health studies, product engagement studies, etc.). Hence, it could be used in a wide array of fields.
             </p>
             <div>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_PREVIEW', '_blank')}>Demo</button>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_SOURCE_CODE', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://datum-io.app/user/dashboard', '_blank')}>Demo</button>
+              <button className="button-preview-source" onClick={() => window.open('https://github.com/HamzahSheikh/datum.io', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://drive.google.com/file/d/1dWGf5BkdpLyCr9IBWnFkdbajuKIjNxYc/view', '_blank')}>Document</button>
             </div>
           </div>
           <div className="project-image">
@@ -289,8 +345,9 @@ function App() {
               Patients would be able to upload their health status details onto the platform. This in turn would be monitored by both doctors and health officials to both help the patients as well as track the progress of the virus. We would be able to monitor daily cases and get a better understanding of how the virus is changing to help mitigate the risks for the rest of the population.
             </p>
             <div>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_PREVIEW', '_blank')}>Demo</button>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_SOURCE_CODE', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://covidex.live/', '_blank')}>Demo</button>
+              <button className="button-preview-source" onClick={() => window.open('https://github.com/HamzahSheikh/covidex-public', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://drive.google.com/file/d/18mJfjZiyo1a1wZsZAaJdHwSCR0GijIVf/view', '_blank')}>Document</button>
             </div>
           </div>
           <div className="project-image">
@@ -313,12 +370,12 @@ function App() {
               NBA Stats Explorer simplifies the process of understanding player performance by offering a visually appealing and easy-to-navigate platform. Whether you're a fantasy basketball enthusiast, a sports analyst, or just a passionate NBA fan, this tool provides a unique perspective on player capabilities, fostering a deeper appreciation for the game.
             </p>
             <div>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_PREVIEW', '_blank')}>Demo</button>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_SOURCE_CODE', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://vithushen.github.io/NBA-Fantasy-Helper/', '_blank')}>Demo</button>
+              <button className="button-preview-source" onClick={() => window.open('https://github.com/vithushen/NBA-Fantasy-Helper', '_blank')}>Source</button>
             </div>
           </div>
           <div className="project-image">
-            <img className='image' src={project2Images[currentProjectImageIndexes.project3]} alt="Project 3" />
+            <img className='image' src={project3Images[currentProjectImageIndexes.project3]} alt="Project 3" />
             <div>
               <button className='button-prev-next' onClick={() => handlePrevImage("project3")}>Previous</button>
               <button className='button-prev-next' onClick={() => handleNextImage("project3")}>Next</button>
@@ -337,8 +394,8 @@ function App() {
               Our user-friendly interface allows customers to browse through a catalog, add items to their cart and securely complete their purchases online. With simple navigation, secure payment options and timely delivery services, our web application redefines the way people shop for groceries, making it effortless, efficient, and enjoyable.
             </p>
             <div>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_PREVIEW', '_blank')}>Demo</button>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_SOURCE_CODE', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://mave-grocery.web.app/index.html', '_blank')}>Demo</button>
+              <button className="button-preview-source" onClick={() => window.open('https://github.com/Ellendra-JH/mave')}>Source</button>
             </div>
           </div>
           <div className="project-image">
@@ -361,8 +418,7 @@ function App() {
               The Figma project and mockup website show how Eldr works, making it simple for everyone to understand its purpose: bringing happiness and friendship to older adults. Eldr is all about making seniors' lives better by connecting them with others in a fun and easy way.
             </p>
             <div>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_PREVIEW', '_blank')}>Demo</button>
-              <button className="button-preview-source" onClick={() => window.open('URL_FOR_SOURCE_CODE', '_blank')}>Source</button>
+              <button className="button-preview-source" onClick={() => window.open('https://www.figma.com/proto/AeMKmKMeebpAjkK44w4yGK/Soen-357-Mini-Project?node-id=39-689&starting-point-node-id=39%3A590', '_blank')}>Demo</button>
             </div>
           </div>
           <div className="project-image">
