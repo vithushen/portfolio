@@ -31,7 +31,14 @@ import nba2 from './assets/nba-2.jpeg';
 
 import eldr1 from './assets/elder-1.png';
 import eldr2 from './assets/elder-2.png';
-import eldr3 from './assets/elder-3.png';
+import eldr3 from './assets/elder-3.png'; 
+
+import ryu1 from './assets/ryu-1.png';
+import ryu2 from './assets/ryu-2.png';
+import ryu3 from './assets/ryu-3.png';
+import ryu4 from './assets/ryu-4.png';
+import ryu5 from './assets/ryu-5.png';
+
 
 // Import skill logos
 import htmlLogo from './assets/html.png';
@@ -127,22 +134,26 @@ function App() {
     project3: 0,
     project4: 0,
     project5: 0,
+    project6: 0,
   });
 
-  // Define images for Project 1
+  // Define images for Datum.io 
   const project1Images = [datum1, datum2, datum3, datum4, datum5];
 
-  // Define images for Project 2
+  // Define images for Covidex
   const project2Images = [covidex2, covidex1, covidex3];
 
-   // Define images for Project 2
+   // Define images for NBA Fantasy Helper
    const project3Images = [nba1, nba2];
 
-    // Define images for Project 2
+    // Define images for Mave Grocery
     const project4Images = [mave1, mave2, mave3, mave4];
 
-   // Define images for Project 2
+   // Define images for Eldr
    const project5Images = [eldr1, eldr3 ,eldr2];
+
+    // Define images for RYU Inventory
+   const project6Images = [ryu1, ryu2 ,ryu3, ryu4, ryu5];
 
 
    const handleNextImage = (project) => {
@@ -153,6 +164,7 @@ function App() {
         project3: project3Images.length,
         project4: project4Images.length,
         project5: project5Images.length,
+        project6: project6Images.length,
       };
   
       return {
@@ -170,6 +182,7 @@ function App() {
         project3: project3Images.length,
         project4: project4Images.length,
         project5: project5Images.length,
+        project6: project6Images.length,
       };
   
       return {
@@ -301,10 +314,10 @@ function App() {
             </div>
           </div>
           <div className="project-image">
-            <img className='image' src={project1Images[currentProjectImageIndexes.project1]} alt="Project 1" />
+            <img className='image' src={project6Images[currentProjectImageIndexes.project6]} alt="Project 6" />
             <div>
-              <button className='button-prev-next' onClick={() => handlePrevImage("project1")}>Previous</button>
-              <button className='button-prev-next' onClick={() => handleNextImage("project1")}>Next</button>
+              <button className='button-prev-next' onClick={() => handlePrevImage("project6")}>Previous</button>
+              <button className='button-prev-next' onClick={() => handleNextImage("project6")}>Next</button>
             </div>
           </div>
         </div>
