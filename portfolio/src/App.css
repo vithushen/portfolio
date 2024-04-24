@@ -26,12 +26,12 @@
   display: flex;
   align-items: center;
   font-size: 40px;
-  color:white;
+  color: white;
   font-family: 'Young Serif', serif;
 }
 
 .logo {
-  width: 100px; 
+  width: 100px;
   height: 100px;
   margin-right: 10px;
 }
@@ -39,7 +39,7 @@
 .right-side .nav-link {
   font-size: 20px;
   margin-left: 20px;
-  margin-right: 50px; 
+  margin-right: 50px;
   color: #fff;
   text-decoration: none;
   font-family: 'Young Serif', serif;
@@ -52,27 +52,32 @@
   margin-left: 20%;
   margin-top: 6%;
   border-radius: 50%;
-  transition: box-shadow 1s ease-in-out; /* Transition the box-shadow property over 1 second */
-  box-shadow: 0 4px 20px #1932d4; /* Updated box shadow with 20px blur */
+  transition: box-shadow 1s ease-in-out;
+  /* Transition the box-shadow property over 1 second */
+  box-shadow: 0 4px 20px #1932d4;
+  /* Updated box shadow with 20px blur */
 }
 
 .vithuImageF.withBoxShadow {
-  box-shadow: 0 4px 50px #1932d4; /* Updated box shadow with 20px blur */
+  box-shadow: 0 4px 50px #1932d4;
+  /* Updated box shadow with 20px blur */
 }
 
 .flex-container {
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center;
+  /* Center items vertically */
 }
 
 .text-content {
-  color: white; /* Set the text color */
+  color: white;
+  /* Set the text color */
   margin-left: 5%;
   margin-top: 7%;
   font-size: 30px;
 }
 
-.typewriter-text{
+.typewriter-text {
   font-family: 'Young Serif';
   letter-spacing: '5px';
   color: #1932d4;
@@ -80,7 +85,7 @@
 }
 
 
-.text-content .p{
+.text-content .p {
   font-size: 20px;
   width: 650px;
 }
@@ -93,35 +98,36 @@
   font-family: 'Young Serif', serif;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  transition: background-color 0.3s ease;
+  /* Add a smooth transition effect */
   margin-left: 10px;
   border: none;
 }
 
 .buttonCss button:hover {
-  background: linear-gradient(to bottom, #00138f, #0056b3); 
+  background: linear-gradient(to bottom, #00138f, #0056b3);
   color: white;
   border: none;
 }
 
-.title{
+.title {
   font-size: 75px;
   color: white;
-} 
+}
 
-.title-covidex{
+.title-covidex {
   font-size: 60px;
   color: white;
-} 
+}
 
-.project-logos{
-  height:250px;
+.project-logos {
+  height: 250px;
   border-radius: 50px;
   margin-left: 50px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
   cursor: pointer;
 
-} 
+}
 
 .skills {
   margin-top: 50px;
@@ -137,7 +143,7 @@
 }
 
 /* CSS for My Skills */
-.skills{
+.skills {
   margin-top: 450px;
 }
 
@@ -166,7 +172,7 @@
 
 .skill-item:hover {
   transform: translateY(-5px);
-  background: linear-gradient(to bottom, #00138f, #0056b3); 
+  background: linear-gradient(to bottom, #00138f, #0056b3);
   color: white;
 }
 
@@ -184,131 +190,146 @@
 
 /* CSS for my projects */
 
-.title-project{
-  
+.title-project {
+
   font-size: 36px;
-  color:white;
+  color: white;
 }
 
 .projects {
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
   text-align: center;
   padding-bottom: 50px;
   background-image: url('./assets/bg-blue.png');
   background-size: cover;
 }
+
+
+/* CSS for my projects */
 .project-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  
-}
-
-.image-container {
-  margin-right: 300px; /* Adjust the margin between image and text */
-}
-
-.second-container{
-  margin-right: 100px;
-}
-
-
-.project-image {
-  width: 200px; 
-  height: auto; 
-}
-
-.fantasy-image {
-  width: 500px; 
-  height: 400px; 
-  border-radius: 10px;
-  margin-top: 50px;
-}
-
-.datum-image{
-  width: 500px; 
-  height: 400px; 
-  border-radius: 10px;
-  margin-top: 50px;
-}
-
-.eldr-image{
-  width: 200px; 
-  height: auto; 
-  margin-left: 450px; /* Adjust the margin between image and text */
-}
-
-.covidex-image{
-  width: 200px; 
-  height: auto; 
-  margin-left: 450px; /* Adjust the margin between image and text */
+  color: white;
+  width: 1500px;
+  margin-bottom: 50px;
 }
 
 .project-details {
-  text-align: left; /* Align text to the left within the details div */
-  width: 500px;
+  text-align: left;
+  margin-right: 20px;
+  /* Adjust spacing between details and image */
+
 }
 
 .title {
-  font-size: 36px; 
-  margin-bottom: 10px; 
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.title-datum{
-  color: white;
-  font-size: 60px;
-}
-
-.title-fantasy{
-  color: white;
-  font-size: 50px;
-}
-
-.title-eldr{
-  color: white;
-  font-size: 50px;
-}
 .description {
-  font-size: 18px !important; 
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white !important;
+  width: 700px;
 }
 
-.preview {
-  width: 500px;
-  height: 35px;
+.project-image img {
+  width: 350px;
+  /* Set the desired width */
+  height: 250px;
+  /* Set the desired height */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+
+}
+
+.button-preview-source {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Young Serif';
+  display: inline-block;
   font-size: 15px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  background-color: white;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
   cursor: pointer;
-  outline: none;
-  border-radius: 3px;
-  border: none;
 }
 
-.source {
-  width: 500px;
-  height: 35px;
-  font-size: 15px;
-  margin-bottom: 30px;
-  background-color: white;
-  cursor: pointer;
-  outline: none;
-  border-radius: 3px;
-  border: none;
+
+.button-preview-source:hover {
+  background-color: #45a049;
 }
 
-.preview:hover {
-  background: linear-gradient(to bottom, #00138f, #0056b3); 
+.button-prev-next {
+  background-color: white;
+  font-family: 'Young Serif';
   border: none;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-prev-next:hover {
+  background: linear-gradient(to bottom, #0b23bc, #0056b3);
   color: white;
 }
 
-.source:hover {
-  background: linear-gradient(to bottom, #00138f, #0056b3); 
-  border: none;
-  color: white;
+/* Mobile view */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-details {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adjust spacing between details and image */
+  }
 }
+
+.title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 750px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.image{
+  height: 100% !important;
+  width: 100% !important;
+}
+
 
 /* Footer */
 .footer {
@@ -322,8 +343,8 @@
   margin-bottom: 20px;
 }
 
-.social-icon-link{
-  width: 45px; 
+.social-icon-link {
+  width: 45px;
   height: 45px;
   margin: -15px 5px;
   margin-top: 5px;
@@ -361,7 +382,7 @@
 
 .copyright {
   font-size: 14px;
-} 
+}
 
 @media (max-width: 1024px) {
   .navbar {
@@ -395,60 +416,71 @@
     background-size: 850%;
     height: auto;
   }
+
   .website-name {
     margin-left: 10px;
   }
 
-  .h1{
+  .h1 {
     font-size: 25px;
   }
 
   .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
+    align-items: center;
+    /* Center items horizontally */
+    text-align: center;
+    /* Center text */
   }
 
   .vithuImageF {
     width: 250px;
     height: 250px;
-    margin-bottom: 20px; /* Adjust spacing between image and text */
+    margin-bottom: 20px;
+    /* Adjust spacing between image and text */
   }
-  
+
   .text-content {
     color: white;
     font-size: 30px;
-    margin-bottom: 20px; /* Adjust spacing between text and buttons */
+    margin-bottom: 20px;
+    /* Adjust spacing between text and buttons */
   }
-  
+
   .text-content .p {
     font-size: 20px;
-    margin-right: 0; 
-    width: 100%; 
+    margin-right: 0;
+    width: 100%;
   }
-  
+
   .buttonCss button {
     font-size: 15px;
     height: 50px;
     width: 170px;
     margin-right: 15px;
-    margin-top: 20px; /* Adjust top margin for buttons */
-    margin-bottom: 20px; /* Adjust bottom margin for buttons */
+    margin-top: 20px;
+    /* Adjust top margin for buttons */
+    margin-bottom: 20px;
+    /* Adjust bottom margin for buttons */
     font-family: 'Young Serif', serif;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .buttonCss button:hover {
     background-color: #00138f;
   }
+
   .button-container {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    margin-top: 10px; /* Adjust top margin for the container */
+    justify-content: center;
+    /* Center the buttons horizontally */
+    margin-top: 10px;
+    /* Adjust top margin for the container */
   }
+
   .skills-container {
     margin: 0 auto;
     display: flex;
@@ -458,70 +490,80 @@
   }
 
   .skill-item {
-    width: 75px; /* Set the width of each skill item to fit two columns */
+    width: 75px;
+    /* Set the width of each skill item to fit two columns */
     height: 125px;
-    margin: 10px; /* Add some margin between skill items */
+    margin: 10px;
+    /* Add some margin between skill items */
   }
 
   .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px; /* Adjust spacing between projects */
+    margin-bottom: 40px;
+    /* Adjust spacing between projects */
 
   }
+
   .project-details {
     text-align: center;
     margin: 0 auto;
-    max-width: 350px; 
+    max-width: 350px;
     padding: 20px;
   }
+
   .title {
-    font-size: 30px; 
-    margin-bottom: 10px; /* Adjust spacing between title and image */
+    font-size: 30px;
+    margin-bottom: 10px;
+    /* Adjust spacing between title and image */
   }
 
   .eldr-image {
     width: 150px;
     height: 250px;
-    margin-bottom: 10px; /* Adjust spacing between image and text */
+    margin-bottom: 10px;
+    /* Adjust spacing between image and text */
     margin-left: 50px;
   }
 
-  .fantasy-image{
+  .fantasy-image {
     width: 350px;
     height: 250px;
-    margin-bottom: 10px; /* Adjust spacing between image and text */
+    margin-bottom: 10px;
+    /* Adjust spacing between image and text */
     margin-left: 50px;
   }
 
 
   .description {
     color: white;
-    margin-bottom: 20px; /* Adjust spacing between text and buttons */
+    margin-bottom: 20px;
+    /* Adjust spacing between text and buttons */
     width: 350px;
     margin-left: 75px;
-    text-align: center !important; 
+    text-align: center !important;
     font-size: 14px !important;
   }
 
-  .button-container{
+  .button-container {
     padding-bottom: 550px;
   }
-  
-  .title-datum{
+
+  .title-datum {
     margin-top: -375px;
     padding-bottom: 250px;
   }
 
-  .datum-image{
+  .datum-image {
     width: 350px;
     height: 250px;
-    margin-top: 100px; /* Adjust spacing between image and text */
+    margin-top: 100px;
+    /* Adjust spacing between image and text */
     margin-left: 50px;
   }
 
-  .title-covidex{
+  .title-covidex {
     margin-top: -550px;
     padding-bottom: 300px;
   }
@@ -530,11 +572,13 @@
     width: 150px;
     height: 250px;
     position: relative;
-    top: -1250px; /* Adjust this value to move the element up */
-    left: -175px; /* Adjust this value to move the element horizontally */
+    top: -1250px;
+    /* Adjust this value to move the element up */
+    left: -175px;
+    /* Adjust this value to move the element horizontally */
   }
 
-  .title-fantasy{
+  .title-fantasy {
     margin-top: -1150px;
     padding-bottom: 300px;
   }
@@ -543,19 +587,25 @@
     width: 350px;
     height: 250px;
     position: relative;
-    top: -700px; /* Adjust this value to move the element up */
-    left: -5px; /* Adjust this value to move the element horizontally */
+    top: -700px;
+    /* Adjust this value to move the element up */
+    left: -5px;
+    /* Adjust this value to move the element horizontally */
   }
-  .title-eldr{
+
+  .title-eldr {
     margin-top: -600px;
     padding-bottom: 300px;
   }
+
   .eldr-image {
     width: 175px;
     height: 250px;
     position: relative;
-    top: -1150px; /* Adjust this value to move the element up */
-    left: 20px; /* Adjust this value to move the element horizontally */
+    top: -1150px;
+    /* Adjust this value to move the element up */
+    left: 20px;
+    /* Adjust this value to move the element horizontally */
   }
 
   .preview,
@@ -563,22 +613,25 @@
     font-size: 15px;
     height: 50px;
     width: 170px;
-    margin-top: 25px; /* Adjust top margin for buttons */
-    margin-bottom: 10px; /* Adjust bottom margin for buttons */
+    margin-top: 25px;
+    /* Adjust top margin for buttons */
+    margin-bottom: 10px;
+    /* Adjust bottom margin for buttons */
     font-family: 'Young Serif', serif;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 10px; /* Adjust margin between buttons */
+    margin-right: 10px;
+    /* Adjust margin between buttons */
   }
 
   .preview:hover,
   .source:hover {
-    background: linear-gradient(to bottom, #00138f, #0056b3); 
+    background: linear-gradient(to bottom, #00138f, #0056b3);
     color: white;
   }
-  
-  .image-container{
+
+  .image-container {
     margin-left: 250px;
   }
 
@@ -590,6 +643,7 @@
     transform: translateX(-10%);
     color: white;
   }
+
   100% {
     transform: translateX(0);
     color: #122ee0;
@@ -614,6 +668,7 @@
   }
 
   .right-side {
-    display: none; /* Hide the right-side links */
+    display: none;
+    /* Hide the right-side links */
   }
 }
