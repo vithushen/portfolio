@@ -294,7 +294,7 @@ function App() {
         {/* Project 1 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>Blip Barber</h2>
+            <h2>Blip Barber (2024)</h2>
             <p className="description">
               Our platform serves as a dynamic marketplace, connecting skilled home barbers with customers seeking affordable and convenient haircuts right in their neighborhood.
               <br></br>
@@ -335,7 +335,7 @@ function App() {
         {/* Project 1 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>RYU Inventory</h2>
+            <h2>RYU Inventory (2024)</h2>
             <p className="description">
               A user-friendly web application designed for the Ryu Restaurant manager to efficiently keep track and maintaining their inventory. With our intuitive interface, managers can effortlessly perform inventory counts at the end of each month, ensuring accurate reporting.
               <br></br>
@@ -359,7 +359,7 @@ function App() {
         {/* Project 1 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>Datum.io</h2>
+            <h2>Datum.io (2023)</h2>
             <p className="description">
               The purpose of this project is to design a mobile application to allow researchers to collect data for a specific study that encourages repeated engagement through gamification.
               <br></br>
@@ -384,7 +384,7 @@ function App() {
         {/* Project 2 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>Covidex</h2>
+            <h2>Covidex (2022)</h2>
             <p className="description">
               Covidex is a covid-19 tracking application designed for multiple users such as common patients, doctors, health officials and and immigration officials. Its goal is to help us deal with the reality of the situation we currently face and try to move forward.
               <br></br>
@@ -409,7 +409,7 @@ function App() {
         {/* Project 3 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>NBA Fantasy Helper</h2>
+            <h2>NBA Fantasy Helper (2023)</h2>
             <p className="description">
               NBA Fantasy Draft Helper is your ultimate companion for building a winning fantasy basketball team! This innovative project brings together the power of data and user-friendly design, providing NBA enthusiasts with a comprehensive tool to make the best decisions during their fantasy drafts.
               <br></br>
@@ -433,7 +433,7 @@ function App() {
         {/* Project 4 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>Mave Grocery Store</h2>
+            <h2>Mave Grocery Store (2021)</h2>
             <p className="description">
               Mave Grocery Store project is a web application where customers can experience the convenience of grocery shopping from the comfort of their homes. By creating a personalized account, users gain access to a vast array of products from fresh produce to cleaning supplies.
               <br></br>
@@ -457,7 +457,7 @@ function App() {
         {/* Project 5 */}
         <div className="project-container">
           <div className="project-details">
-            <h2>Eldr</h2>
+            <h2>Eldr (2022)</h2>
             <p className="description">
               Eldr is a friendly app made for elderly people. It helps them talk to others, play games, and make new friends easily. The app is easy to use and makes seniors feel less lonely by connecting them with others.
               <br></br>
